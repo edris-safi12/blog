@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>تماس با ما | کاپیسا بلاگ</title>
+    <meta name="description" content="تماس با تیم کاپیسا بلاگ از طریق واتساپ و ایمیل.">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <style>
+        .contact-page {
+            max-width: 850px;
+            margin: 40px auto;
+        }
+
+        .contact-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .contact-card h1 {
+            margin: 12px 0;
+            color: #17365d;
+        }
+
+        .contact-description {
+            color: #666;
+            line-height: 2;
+            margin-bottom: 25px;
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            margin: 25px 0;
+        }
+
+        .contact-method {
+            padding: 22px;
+            border: 1px solid #e5eaf0;
+            border-radius: 12px;
+            background: #f8fafc;
+        }
+
+        .contact-method h2 {
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        .contact-method p {
+            direction: ltr;
+            text-align: right;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 11px 18px;
+            margin-top: 8px;
+            border-radius: 8px;
+            background: #1769aa;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .whatsapp-button {
+            background: #16864a;
+        }
+
+        .contact-button:hover {
+            opacity: 0.88;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px;
+            border: 1px solid #d9e0e8;
+            border-radius: 9px;
+            font: inherit;
+        }
+
+        .form-group textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .form-note {
+            color: #8a5700;
+            background: #fff7e8;
+            border-radius: 8px;
+            padding: 12px;
+            line-height: 1.9;
+        }
+
+        @media (max-width: 600px) {
+            .contact-page {
+                margin: 20px auto;
+            }
+
+            .contact-card {
+                padding: 20px;
+            }
+
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="../index.html">
+            <span class="brand-mark">ک</span>
+            <span>
+                کاپیسا بلاگ
+                <small>خبر، مقاله و دانستنی</small>
+            </span>
+        </a>
+
+        <a href="../index.html">← صفحه اصلی</a>
+    </div>
+</header>
+
+<main class="container">
+    <section class="contact-page">
+        <div class="contact-card">
+
+            <span class="eyebrow">ارتباط با ما</span>
+
+            <h1>تماس با کاپیسا بلاگ</h1>
+
+            <p class="contact-description">
+                برای ارسال پیشنهاد، انتقاد، پرسش یا خبر،
+                از طریق واتساپ یا ایمیل با ما در تماس شوید.
+                از ارتباط شما سپاسگزاریم.
+            </p>
+
+            <div class="contact-methods">
+
+                <div class="contact-method">
+                    <h2>💬 تماس از طریق واتساپ</h2>
+                    <p>+93796345081</p>
+
+                    <a
+                        class="contact-button whatsapp-button"
+                        href="https://wa.me/93796345081"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        پیام در واتساپ
+                    </a>
+                </div>
+
+                <div class="contact-method">
+                    <h2>📧 تماس از طریق ایمیل</h2>
+                    <p>edrissafi376@gmail.com</p>
+
+                    <a
+                        class="contact-button"
+                        href="mailto:edrissafi376@gmail.com"
+                    >
+                        ارسال ایمیل
+                    </a>
+                </div>
+
+            </div>
+
+            <h2>برای ما پیام بفرستید</h2>
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-group">
+                    <label for="name">نام شما</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="نام خود را وارد کنید"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">ایمیل شما</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="ایمیل خود را وارد کنید"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">موضوع پیام</label>
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="موضوع پیام"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">متن پیام</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="پیام خود را بنویسید..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="contact-button">
+                    آماده‌سازی ایمیل
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        © <span id="year"></span> کاپیسا بلاگ | تمامی حقوق محفوظ است.
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+    document.getElementById("contactForm").addEventListener(
+        "submit",
+        function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const subject = document.getElementById("subject").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const body =
+                "نام: " + name + "\n" +
+                "ایمیل: " + email + "\n\n" +
+                "پیام:\n" + message;
+
+            const mailto =
+                "mailto:edrissafi376@gmail.com" +
+                "?subject=" + encodeURIComponent(subject) +
+                "&body=" + encodeURIComponent(body);
+
+            window.location.href = mailto;
+        }
+    );
+</script>
+
+</body>
+</html>
