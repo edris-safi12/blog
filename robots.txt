@@ -1,4 +1,5 @@
-User-agent: *
+noUser-agent: *
 Allow: /
 
 Sitemap: https://blog.kapisa.xyz/sitemap.xml
+
