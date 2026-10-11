@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="کاپیسا بلاگ؛ خبرها، مقاله‌ها و دانستنی‌ها به زبان دری و فارسی">
+  <title>کاپیسا بلاگ | خبرها و مقاله‌های روز</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- آیکون سایت کاپیسا بلاگ -->
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/favicon.png">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">ک</span><span>کاپیسا بلاگ<small>خبر، مقاله و دانستنی</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="بازکردن منو">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <a href="index.html">صفحه اصلی</a><a href="pages/category.html?name=افغانستان">افغانستان</a>
+      <a href="pages/category.html?name=جهان">جهان</a><a href="pages/category.html?name=فناوری">فناوری</a>
+      <a href="pages/category.html?name=آموزش">آموزش</a><a href="pages/about.html">درباره ما</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <section class="hero">
+    <div><span class="eyebrow">رسانه</span><h1>با تازه‌ترین خبرها و مقاله‌ها همراه باش</h1>
+      <p>خبرها، آموزش‌ها و دانستنی‌ها در یک‌جا؛ با دسته‌بندی روشن و مطالعه آسان.</p>
+      <a class="button button-light" href="#latest">دیدن تازه‌ترین مطالب ←</a></div>
+    <div class="hero-symbol" aria-hidden="true">📰</div>
+  </section>
+  <form class="search-bar" id="searchForm"><input id="searchInput" type="search" placeholder="عنوان، موضوع یا کلمه‌ای را جست‌وجو کن..." aria-label="جست‌وجوی مقاله"><button class="button" type="submit">جست‌وجو</button></form>
+  <section class="section-block">
+    <div class="section-heading"><div><span class="eyebrow">موضوعات</span><h2>دسته‌بندی مطالب</h2></div></div>
+    <div class="category-grid" id="categoryGrid">
+      <a class="category-tile" href="pages/category.html?name=افغانستان"><span>🏔️</span><b>افغانستان</b></a>
+      <a class="category-tile" href="pages/category.html?name=جهان"><span>🌍</span><b>جهان</b></a>
+      <a class="category-tile" href="pages/category.html?name=فناوری"><span>💻</span><b>فناوری</b></a>
+      <a class="category-tile" href="pages/category.html?name=اقتصاد"><span>📈</span><b>اقتصاد</b></a>
+      <a class="category-tile" href="pages/category.html?name=ورزش"><span>⚽</span><b>ورزش</b></a>
+      <a class="category-tile" href="pages/category.html?name=آموزش"><span>📚</span><b>آموزش</b></a>
+    </div>
+  </section>
+  <section class="section-block" id="latest">
+    <div class="section-heading"><div><span class="eyebrow">تازه بخوان</span><h2 id="resultsTitle">آخرین مطالب</h2></div><span class="muted" id="resultCount"></span></div>
+    <div class="article-grid" id="articleGrid"></div>
+  </section>
+  <section class="newsletter">
+    <div><h2>هر روز چیز تازه‌ای بخوان</h2><p>برای دریافت خبرنامه، در نسخه آینده می‌توانیم ثبت‌نام ایمیلی اضافه کنیم.</p></div>
+    <span class="newsletter-icon">✉️</span>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><a class="brand brand-footer" href="index.html"><span class="brand-mark">ک</span><span>کاپیسا بلاگ<small>خبر، مقاله و دانستنی</small></span></a><div><a href="pages/about.html">درباره ما</a><a href="pages/contact.html">تماس با ما</a><a href="pages/privacy.html">حریم خصوصی</a></div><p>© <span id="year"></span> کاپیسا بلاگ</p></div></footer>
+<script src="js/articles.js"></script><script src="js/main.js"></script>
+</body></html>
